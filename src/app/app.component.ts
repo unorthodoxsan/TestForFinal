@@ -19,7 +19,7 @@ export class AppComponent {
    }
    
    ngOnInit() : void {
-      this._product.getproducts()
+      this._product.getPosts()
       .subscribe(iproducts => this.iproducts = iproducts);
    }
 }
