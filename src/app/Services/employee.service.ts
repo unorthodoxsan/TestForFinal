@@ -12,9 +12,8 @@ import { IEmployee } from '../Employee/employee';
 
 @Injectable()
 export class EmployeeService {
-  // postsUrl: string = 'https://api.myjson.com/bins/1b1a9u';
-
-  postsUrl: string = 'http://localhost:3000/employees';
+  
+  postsUrl: string = 'http://localhost:3000/emp_data';
 
   constructor(private http: HttpClient) { }
 
