@@ -1,4 +1,7 @@
 export interface IEmployee {
-    EmployeeID: number;
-    EmployeeName: string;
- }
+    emp_number: number;
+    emp_name: string;
+    week: number;
+    status: string;
+    tot_task: number;
+}
