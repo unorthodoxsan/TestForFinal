@@ -1,4 +1,4 @@
-<div class="container">
+<div class="container img_container" style="margin-top: 5%;">
   <div class="items" class="col-md-4">
     <img src="../../../assets/images/user_mgmt_img.jpg" class="img-thumbnail">
     <figcaption>User Management</figcaption>
@@ -31,7 +31,7 @@
   </thead>
   <tbody>
     <tr *ngFor="let emp of emps">
-      <td>{{emp.emp_number}}</td>
+      <td>{{emp.id}}</td>
       <td>{{emp.emp_name}}</td>
       <td>{{emp.tot_task}}</td>
       <td>{{emp.status}}</td>

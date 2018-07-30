@@ -1,5 +1,5 @@
 export interface IEmployee {
-    emp_number: number;
+    id: number;
     emp_name: string;
     week: number;
     status: string;
