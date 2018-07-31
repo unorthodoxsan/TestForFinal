@@ -11,7 +11,14 @@ import { UserMgmtComponent } from './Components/user-mgmt/user-mgmt.component';
 import { TaskMgmtComponent } from './Components/task-mgmt/task-mgmt.component';
 import { ReportComponent } from './Components/report/report.component';
 import { HeaderComponent } from './Components/header/header.component';
-import { FooterComponent } from './Components/footer/footer.component'; 
+import { FooterComponent } from './Components/footer/footer.component';
+
+import * as FusionCharts from 'fusioncharts';
+import * as Charts from 'fusioncharts/fusioncharts.charts';
+import * as FintTheme from 'fusioncharts/themes/fusioncharts.theme.fint';
+import { FusionChartsModule } from 'angular4-fusioncharts';
+
+FusionChartsModule.fcRoot(FusionCharts, Charts, FintTheme);
 
 @NgModule({
   declarations: [
@@ -27,7 +34,8 @@ import { FooterComponent } from './Components/footer/footer.component';
     BrowserModule,
     AppRoutingModule,
     HttpModule,
-    HttpClientModule
+    HttpClientModule,
+    FusionChartsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

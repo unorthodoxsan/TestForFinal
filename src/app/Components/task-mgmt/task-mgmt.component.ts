@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { IEmployee } from '../../Employee/employee';
+import { EmployeeService } from '../../Services/employee.service';
 
 @Component({
   selector: 'app-task-mgmt',
@@ -7,9 +9,13 @@ import { Component, OnInit } from '@angular/core';
 })
 export class TaskMgmtComponent implements OnInit {
 
-  constructor() { }
+  emps: IEmployee[];
+
+  constructor(private empService: EmployeeService) { }
 
   ngOnInit() {
+    this.empService.getPosts().subscribe(emps => {
+      this.emps = emps;
+    });
   }
-
 }

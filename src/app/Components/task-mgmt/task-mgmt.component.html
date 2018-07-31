@@ -1,1 +1,5 @@
-<p>Task Management</p>
+<select>
+    <option *ngFor="let emp of emps" value={{emp.id}}>
+        {{emp.emp_name}}
+    </option>
+</select>
