@@ -3,5 +3,5 @@ export interface IEmployee {
     emp_name: string;
     week: number;
     status: string;
-    tot_task: number;
+    tot_task: string;
 }

@@ -8,3 +8,7 @@ figcaption{
 
     text-align: center;
 }
+
+table, th, td, tr {
+    border: 2px solid black;
+}

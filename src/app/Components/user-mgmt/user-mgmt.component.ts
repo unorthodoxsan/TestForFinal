@@ -17,11 +17,11 @@ export class UserMgmtComponent implements OnInit {
 
   addPost(id, emp_name, week, status, tot_task) {
     if (!emp_name || !id) {
-      alert('Please add employee data!');
+      alert('Please add employee data!'); 
     } else {
 
-      this.employeeService.savePost({ id, emp_name, week, status, tot_task } as IEmployee).subscribe(emp => {
-        console.log("Post=" + emp);
+      this.employeeService.saveEmp({ id, emp_name, week, status, tot_task } as IEmployee).subscribe(emp => {
+        alert("Employee Data added!");
       });
     }
   }

@@ -1,8 +1,5 @@
-import { Component } from '@angular/core';
-import { IEmployee } from './Employee/employee';
+import { Component, Input } from '@angular/core';
 import { EmployeeService } from './Services/employee.service';
-import { Http , Response } from '@angular/http';
-import { Observable } from 'rxjs/Observable';
 import 'rxjs/add/operator/map';
 
 @Component({
@@ -13,13 +10,6 @@ import 'rxjs/add/operator/map';
 })
 export class AppComponent {
   title = 'app';
-
-  iproducts: IEmployee[];
-   constructor(private _product: EmployeeService) {
-   }
-   
-   ngOnInit() : void {
-      this._product.getPosts()
-      .subscribe(iproducts => this.iproducts = iproducts);
-   }
+  constructor() { }
+  ngOnInit() { }
 }

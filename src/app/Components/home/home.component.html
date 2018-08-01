@@ -19,21 +19,21 @@
 
 <p class="dashboard">Dashboard</p>
 
-<table class="table table-bordered">
-  <thead>
+<table class="table">
+  <thead style="font-weight: bold;">
     <tr>
-      <th>Employee Number</th>
-      <th>Employee Name</th>
-      <th>Total Tasks Assigned</th>
-      <th>Status</th>
-      <th>Calendar Week</th>
+      <td>Employee Number</td>
+      <td>Employee Name</td>
+      <td>Tasks Assigned</td>
+      <td>Status</td>
+      <td>Calendar Week</td>
     </tr>
   </thead>
   <tbody>
     <tr *ngFor="let emp of emps">
       <td>{{emp.id}}</td>
       <td>{{emp.emp_name}}</td>
-      <td>{{emp.tot_task}}</td>
+      <td>{{emp.tasks}}</td>
       <td>{{emp.status}}</td>
       <td>{{emp.week}}</td>
     </tr>
